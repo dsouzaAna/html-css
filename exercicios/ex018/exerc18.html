@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Fontes em CSS</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Sarina:regular');
+      @font-face {
+        font-family: 'littlebird';
+        src: url('exercicio/littlebird.ttf') format('opentype');
+      }
+      h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3em;
+        font-style: normal;
+        font-weight: bolder;
+      }
+      p {
+        font-family: sans-serif;
+        font-size: 2em;
+        font-style: normal;
+        font-weight: normal;
+      }
+      #googlefonts {
+        font-family: Sarina;
+      }
+      #fontelocal {
+        font-family: littlebird;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fontes em CSS</h1>
+    <p>Podemos configurar fontes padrão do sistema</p>
+    <p id="googlefonts">Ou então usar uma fonte do Google Fonts</p>
+    <p id="fontelocal">Ou ainda usar um arquivo local de fontes</p>
+  </body>
+</html>
